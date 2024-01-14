@@ -1,13 +1,13 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors',1);
+ini_set('display_errors', 1);
 
 include('check.php');
 
 
 $databaseName = 'userdb';
-$databaseUser = 'MySQL 계정이름';
-$databasePassword = '패스워드';
+$databaseUser = 'MySQL 계정 아이디';
+$databasePassword = 'MySQL 계정 패스워드';
 
 
 /*
@@ -22,9 +22,9 @@ $pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS userdb DEFAULT CHARSET=utf8 CO
 /*
 * 테이블 생성
 */
-$pdo = new PDO('mysql:host=localhost;dbname='.$databaseName, $databaseUser, $databasePassword);
+$pdo = new PDO('mysql:host=localhost;dbname=' . $databaseName, $databaseUser, $databasePassword);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
- 
+
 $pdo->exec('DROP TABLE IF EXISTS users;');
 
 $pdo->exec('CREATE TABLE `users` (

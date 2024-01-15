@@ -4,7 +4,7 @@
 
 PHP 8.2에서 동작되는지만 간단히 테스트했습니다.
 
-https://webnautes.tistory.com/1989
+구현 내용은 다음 포스트를 참고하세요. https://webnautes.tistory.com/1989
 
 
 
